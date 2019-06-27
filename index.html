@@ -5,24 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     </style>
-    <title>CrystalCollecto!</title>
+    <title>InfinityStone Collector!</title>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <h1>CrystalsCollector!</h1>
+            <h1>InfinityStoneCollector!</h1>
         </header>
 
+        <div id="instruction-box">
+            <p>How to play:</p>
+            <p>You will be given a random number at the beginning of the game.</p>
+            <p>There are 4 infinity stones below. By clicking on a stone, you will add a specific amount of points to
+                your total score.</p>
+            <p>You win the game by matching your total score to the random number displayed below. You lose the game if
+                your total score goes above said number.</p>
+            <p>The value of each stone is hidden from you until you click on it.</p>
+            <p>Each time the game starts, the game will change the values of each stone. Have fun!</p>
+        </div>
+
+        <div id="randomnumber-box">0</div>
+        <div class="winlose-box">
+            <div>Wins: <span id="wins">0</span></div>
+            <br />
+            <div>Losess: <span id="losses">0</span></div>
+        </div>
 
 
+        <div id="stone-box">
+            <img src="/assets/images/diamond.jpeg" class="stones" alt="White Infinity Stone">
+            <img src="/assets/images/purple.jpeg" class="stones" alt="Purple Infinity Stone">
+            <img src="/assets/images/red.jpeg" class="stones" alt="Red Infinity Stone">
+            <img src="/assets/images/yellow.jpeg" class="stones" alt="Yellow Infinity Stone">
+        </div>
+        <div id="totalscore-box"></div>
+        <div id="score-box"></div>
     </div>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
     <!-- Script -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
